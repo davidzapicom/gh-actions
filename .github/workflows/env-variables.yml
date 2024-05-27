@@ -6,8 +6,8 @@ jobs:
   test:
     env:
       MONGO_DB_CLUSTER: dz.7yzzqfx.mongodb.net
-      MONGO_DB_USERNAME: davidzapico
-      MONGO_DB_PASSWORD: TO26O5Y6NWxjWWLK
+      MONGO_DB_USERNAME: ${{ secrets.MONGO_DB_USERNAME }}
+      MONGO_DB_PASSWORD: ${{ secrets.MONGO_DB_PASSWORD }}
       MONGO_DB_NAME: gha-demo
     runs-on: ubuntu-latest
     steps:
