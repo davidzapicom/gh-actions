@@ -1,9 +1,14 @@
 name: Env vars
-on: push
+on:
+  push:
+    branches:
+      - main
+      - dev
 env:
   PORT: 8080
 jobs:
   test:
+    environment: Testing
     env:
       MONGO_DB_CLUSTER: dz.7yzzqfx.mongodb.net
       MONGO_DB_USERNAME: ${{ secrets.MONGO_DB_USERNAME }}
