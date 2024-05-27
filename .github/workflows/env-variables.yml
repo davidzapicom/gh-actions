@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "MONGO_DB_CLUSTER: ${{ env.MONGO_DB_CLUSTER }}"
   deploy:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get build artifacts
