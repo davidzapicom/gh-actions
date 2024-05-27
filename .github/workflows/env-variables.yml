@@ -27,6 +27,7 @@ jobs:
       - name: Output information
         run: |
           echo "MONGO_DB_CLUSTER: ${{ env.MONGO_DB_CLUSTER }}"
+          echo "MONGO_DB_USERNAME: ${{ env.MONGO_DB_USERNAME }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
