@@ -1,5 +1,5 @@
 name: First Deploy with artifacts
-on: psuh
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
