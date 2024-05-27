@@ -24,7 +24,7 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Output information
-        run: echo "MONGO_DB_CLUSTER: ${{env.MONGO_DB_CLUSTER}}"
+        run: echo "MONGO_DB_CLUSTER: ${{ env.MONGO_DB_CLUSTER }}"
   build:
     needs: test
     runs-on: ubuntu-latest
