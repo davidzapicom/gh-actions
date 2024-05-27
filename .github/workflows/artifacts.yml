@@ -23,6 +23,9 @@ jobs:
         run: npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests
         run: npm test
+      - name: Output information
+        run: |
+          echo "MONGO_DB_CLUSTER: ${{ env.MONGO_DB_CLUSTER }}"
   build:
     needs: test
     runs-on: ubuntu-latest
