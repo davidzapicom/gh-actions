@@ -45,6 +45,6 @@ jobs:
         with:
           name: artifact
       - name: Output contents
-        runs: ls
+        run: ls
       - name: Deploy
         run: echo "Deploying..."
